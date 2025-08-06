@@ -1,8 +1,16 @@
 import React from 'react'
 
-const Button = (props) => {
+const Button = ({text,color='gray',children=null}) => {
+
+    const onClickButton=(e)=>{
+        console.log(e)
+        console.log(text)
+    }
+
     return (
-        <button>{props.text}</button>
+        <button style={{color:color}} onClick={onClickButton}>{text}-{color.toUpperCase()}
+        {children}
+        </button>
     )
 }
 

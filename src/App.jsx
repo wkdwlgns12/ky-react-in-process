@@ -1,8 +1,8 @@
 
 import './App.css'
-import Exam1 from './components/Exam1'
-import Exam2 from './components/Exam2'
-import Exam3 from './components/Exam3'
+import Exam2 from './components/Controller'
+import Viewer from './components/Viewer'
+
 function App() {
 
   const user = {
